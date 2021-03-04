@@ -4,7 +4,7 @@ https://github.com/jenkinsci/docker#updating-plugins-file-preview
 but effectively
 
 ```
-JENKINS_IMAGE=jenkins/jenkins
+JENKINS_IMAGE=madchap/jenkins
 docker run -it ${JENKINS_IMAGE} bash -c "stty -onlcr && jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt --available-updates --output txt" >  plugins2.txt
 mv plugins2.txt plugins.txt
 ```
